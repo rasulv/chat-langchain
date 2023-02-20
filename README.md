@@ -43,4 +43,4 @@ Question-Answering has the following steps, all handled by [ChatVectorDBChain](h
 
 
 # Deploy on Railway
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/-NvLj4?referralCode=milo)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/teWsKO?referralCode=sMr0B-)

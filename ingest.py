@@ -5,6 +5,7 @@ from langchain.document_loaders import ReadTheDocsLoader
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores.faiss import FAISS
+from pathlib import Path
 
 
 def ingest_docs():
@@ -25,4 +26,5 @@ def ingest_docs():
 
 
 if __name__ == "__main__":
-    ingest_docs()
+    if not Path("vectorstore.pkl").exists():
+        ingest_docs()

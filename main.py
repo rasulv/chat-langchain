@@ -83,4 +83,5 @@ if __name__ == "__main__":
     port = os.getenv('PORT')
     if not port:
         port = 9000
+    print(port)
     uvicorn.run(app, host="0.0.0.0", port=int(port))

@@ -14,6 +14,5 @@ RUN pip install --no-cache-dir --upgrade -r requirements.txt
 
 COPY . .
 
-ENTRYPOINT ["bash","entrypoint"]
 
 CMD [ "python3", "main.py" ]

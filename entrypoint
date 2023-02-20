@@ -5,6 +5,5 @@
 set -o errexit
 set -o pipefail
 set -o nounset
-
-wget -r -A.html https://langchain.readthedocs.io/en/latest/
+echo "entrpoint"
 python3 ingest.py

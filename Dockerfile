@@ -15,6 +15,6 @@ RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
 COPY . /code
 
-ENTRYPOINT ["./ingest.sh"]
+ENTRYPOINT ["/entrypoint"]
 
 CMD [ "python3", "main.py" ]

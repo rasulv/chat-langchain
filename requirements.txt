@@ -6,10 +6,8 @@ websockets
 pydantic
 langchain
 uvicorn
-Jinja2
+jinja2
 faiss-cpu
 bs4
 unstructured
 libmagic
-uvloop
-python-magic

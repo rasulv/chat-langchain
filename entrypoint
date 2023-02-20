@@ -6,4 +6,3 @@ set -o errexit
 set -o pipefail
 set -o nounset
 echo "entrpoint"
-python3 ingest.py

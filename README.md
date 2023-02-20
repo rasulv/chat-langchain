@@ -39,3 +39,8 @@ Question-Answering has the following steps, all handled by [ChatVectorDBChain](h
 1. Given the chat history and new user input, determine what a standalone question would be (using GPT-3).
 2. Given that standalone question, look up relevant documents from the vectorstore.
 3. Pass the standalone question and relevant documents to GPT-3 to generate a final answer.
+
+
+
+# Deploy on Railway
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/-NvLj4?referralCode=milo)

@@ -3,7 +3,7 @@ import logging
 import pickle
 from pathlib import Path
 from typing import Optional
-
+import os
 from fastapi import FastAPI, Request, WebSocket, WebSocketDisconnect
 from fastapi.templating import Jinja2Templates
 from langchain.vectorstores import VectorStore
@@ -21,7 +21,10 @@ vectorstore: Optional[VectorStore] = None
 async def startup_event():
     logging.info("loading vectorstore")
     if not Path("vectorstore.pkl").exists():
-        raise ValueError("vectorstore.pkl does not exist, please run ingest.py first")
+        print("Calling ingest.sh to load vectorstore...")
+        os.system('./ingest.sh')
+        # raise ValueError(
+        #     "vectorstore.pkl does not exist, please run ingest.py first")
     with open("vectorstore.pkl", "rb") as f:
         global vectorstore
         vectorstore = pickle.load(f)
